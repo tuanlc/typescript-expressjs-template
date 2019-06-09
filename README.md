@@ -36,5 +36,5 @@ npm run dev
 
 # To do list
 * [x] TypeScript + Express.js
-* [ ] TSLint
+* [x] TSLint
 * [ ] Test
