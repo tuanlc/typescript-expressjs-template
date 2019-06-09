@@ -9,7 +9,7 @@ export let setupApis = (application: Express) => {
   exampleApi.setupApi();
 
   application.use('/api', router);
-}
+};
 
 export interface API {
   setupApi(): any;
