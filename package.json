@@ -9,11 +9,8 @@
     "prettier:fix": "npx prettier --write 'src/**/*'",
     "build": "rm -rf dist && npm run build-ts",
     "build-ts": "tsc",
-    "serve": "node dist/server.js",
-    "watch-node": "nodemon dist/server.js",
-    "watch-ts": "tsc -w",
-    "dev": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
-    "start": "npm run serve"
+    "start": "npx tsc -w -p . & npx nodemon ./dist/index.js",
+    "debug": "npx tsc -w -p . & npx nodemon --inspect ./dist/index.js"
   },
   "author": "tuancnttbk93@gmail.com",
   "repository": {
