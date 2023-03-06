@@ -1,6 +1,6 @@
-import ExampleApi from "./example";
+import ExampleApi from './example';
 
-import { Router, Express } from "express";
+import { Router, Express } from 'express';
 
 export const setupApis = (application: Express) => {
   const router = Router();
@@ -8,7 +8,7 @@ export const setupApis = (application: Express) => {
 
   exampleApi.setupApi();
 
-  application.use("/api", router);
+  application.use('/api', router);
 };
 
 export interface API {
