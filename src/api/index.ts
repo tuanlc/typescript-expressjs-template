@@ -2,7 +2,7 @@ import ExampleApi from './example';
 
 import { Router, Express } from 'express';
 
-export let setupApis = (application: Express) => {
+export const setupApis = (application: Express) => {
   const router = Router();
   const exampleApi = new ExampleApi(router);
 
@@ -12,5 +12,5 @@ export let setupApis = (application: Express) => {
 };
 
 export interface API {
-  setupApi(): any;
+  setupApi(): void;
 }

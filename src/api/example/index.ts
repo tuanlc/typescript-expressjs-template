@@ -11,10 +11,6 @@ export default class ExampleApi implements API {
   }
 
   setupApi() {
-    this.router.get(
-      '/example',
-      exampleMW.canGet,
-      exampleCtrl.get
-    );
+    this.router.get('/example', exampleMW.canGet, exampleCtrl.get);
   }
 }
