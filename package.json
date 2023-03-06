@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tslint": "tslint -c tslint.json -p tsconfig.json",
-    "build": "npm run tslint && rm -rf dist && npm run build-ts",
+    "build": "rm -rf dist && npm run build-ts",
     "build-ts": "tsc",
     "serve": "node dist/server.js",
     "watch-node": "nodemon dist/server.js",
@@ -28,7 +27,6 @@
     "@types/express": "^4.16.1",
     "concurrently": "^4.1.0",
     "nodemon": "^1.19.1",
-    "tslint": "^5.17.0",
     "typescript": "^3.5.1"
   }
 }
