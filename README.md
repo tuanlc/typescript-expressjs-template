@@ -1,7 +1,5 @@
 # Typescript Express.js Template
 
-[![Build Status](https://travis-ci.org/tuanlc/typescript-expressjs-template.svg?branch=master)](https://travis-ci.org/tuanlc/typescript-expressjs-template)
-
 The main purpose of this repository is to quickly create a template for Resful project which uses Typescript and Express.js framework.
 I will try to keep this as up-to-date as possible, but community contributions and recommendations for improvements are encouraged and will be most welcome.
 
